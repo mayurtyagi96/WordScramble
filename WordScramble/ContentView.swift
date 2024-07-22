@@ -11,7 +11,6 @@ struct ContentView: View {
     @State private var usedWords = [String]()
     @State private var rootWord = ""
     @State private var newWord = ""
-    
     @State private var alertTitle = ""
     @State private var alertMsg = ""
     @State private var showAlert = false
