@@ -11,7 +11,6 @@ struct ContentView: View {
     @State private var usedWords = [String]()
     @State private var rootWord = ""
     @State private var newWord = ""
-    
     @State private var alertTitle = ""
     @State private var alertMsg = ""
     @State private var showAlert = false
@@ -67,11 +66,11 @@ struct ContentView: View {
             return
         }
         guard isSpellPossible(word: word) else{
-            showError(title: "spell Error`", message: "this word spell is wrong")
+            showError(title: "spell Error", message: "This word spelling is wrong")
             return
         }
         guard tooShort(word: word) else{
-            showError(title: "too short", message: "word is less than 3 letters or is root word")
+            showError(title: "Too short", message: "Word is less than 3 letters or is root word")
             return
         }
             
@@ -131,7 +130,7 @@ struct ContentView: View {
                 return
             }
         }
-        fatalError("could not founsd the file")
+        fatalError("Could not founsd the file")
     }
 }
 
